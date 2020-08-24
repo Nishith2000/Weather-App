@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Weather-App</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="icon" href="https://f.v1.n0.cdn.getcloudapp.com/items/1J0Y1N1I441v1E2k3e2W/weather.png">
+    </head>
+    <body>
+        <div class="main">
+            {{>header}}
+            <form>
+                <input type="text" placeholder="Enter Location">
+                <input type="submit">
+            </form>
+            <p id="ms1"></p>
+            <p id="ms2"></p>
+            <p id="ms3"><span id = 'f'></span><span id = "s"></span></p>
+            <p id="ms4"></p>
+        </div>
+        {{>footer}}
+        <script src="/js/index.js"></script>
+    </body>
+
+</html>
