@@ -53,7 +53,7 @@ app.get('/help', (req, res) =>{
 app.get('/about', (req, res) => {
     res.render('about', {
         title: "About",
-        content: "This App gives Current Weather forecast for your Locality",
+        content: "This App gives Current Weather forecast for your Locality. It uses information from Mapbox.com and openWeatherMap.org.",
         name: "Nishith"
     })
 })
