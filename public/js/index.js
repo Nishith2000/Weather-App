@@ -10,7 +10,7 @@ const sp2 = document.querySelector("#s")
 form.addEventListener("submit", (e) => {
     e.preventDefault()
     let address = text.value
-    fetch('http://localhost:3000/weather?address='+address).then((response) => {
+    fetch('/weather?address='+address).then((response) => {
     response.json().then((data) => {
         console.log(data)
         if(data.errorMessage)
